@@ -45,7 +45,7 @@
             android:layout_marginLeft="5dp"
             android:layout_marginRight="30dp"
             android:layout_weight="1"
-            android:background="@drawable/green_dark_button_background"
+            android:background="@drawable/dark_button_background"
             android:fontFamily="@font/opensanssemibold"
             android:text="Global"
             android:textAllCaps="false"

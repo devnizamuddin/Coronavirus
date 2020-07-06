@@ -2,6 +2,7 @@ package com.example.coronavirus;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -54,7 +55,12 @@ public class MainActivity extends AppCompatActivity {
         my_country_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+
                 my_country_btn.setBackgroundResource(R.drawable.white_button_backround);
+                my_country_btn.setTextColor(Color.parseColor("#34495e"));
+                global_btn.setBackgroundResource(R.drawable.dark_button_background);
+                global_btn.setTextColor(Color.parseColor("#ffffff"));
                 getMyCountriesData();
 
             }
@@ -64,6 +70,10 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
+                global_btn.setBackgroundResource(R.drawable.white_button_backround);
+                global_btn.setTextColor(Color.parseColor("#34495e"));
+                my_country_btn.setBackgroundResource(R.drawable.dark_button_background);
+                my_country_btn.setTextColor(Color.parseColor("#ffffff"));
                 getGlobalData();
 
             }
