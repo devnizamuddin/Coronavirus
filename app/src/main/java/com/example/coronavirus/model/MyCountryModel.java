@@ -5,7 +5,7 @@ import com.google.gson.annotations.SerializedName;
 
 import java.io.Serializable;
 
-public class CountryModel implements Serializable {
+public class MyCountryModel implements Serializable {
 
     @SerializedName("updated")
     @Expose
@@ -31,6 +31,9 @@ public class CountryModel implements Serializable {
     @SerializedName("recovered")
     @Expose
     private Integer recovered;
+    @SerializedName("todayRecovered")
+    @Expose
+    private Integer todayRecovered;
     @SerializedName("active")
     @Expose
     private Integer active;
@@ -49,9 +52,30 @@ public class CountryModel implements Serializable {
     @SerializedName("testsPerOneMillion")
     @Expose
     private Integer testsPerOneMillion;
+    @SerializedName("population")
+    @Expose
+    private Integer population;
     @SerializedName("continent")
     @Expose
     private String continent;
+    @SerializedName("oneCasePerPeople")
+    @Expose
+    private Integer oneCasePerPeople;
+    @SerializedName("oneDeathPerPeople")
+    @Expose
+    private Integer oneDeathPerPeople;
+    @SerializedName("oneTestPerPeople")
+    @Expose
+    private Integer oneTestPerPeople;
+    @SerializedName("activePerOneMillion")
+    @Expose
+    private Double activePerOneMillion;
+    @SerializedName("recoveredPerOneMillion")
+    @Expose
+    private Double recoveredPerOneMillion;
+    @SerializedName("criticalPerOneMillion")
+    @Expose
+    private Double criticalPerOneMillion;
 
     public Double getUpdated() {
         return updated;
@@ -117,6 +141,14 @@ public class CountryModel implements Serializable {
         this.recovered = recovered;
     }
 
+    public Integer getTodayRecovered() {
+        return todayRecovered;
+    }
+
+    public void setTodayRecovered(Integer todayRecovered) {
+        this.todayRecovered = todayRecovered;
+    }
+
     public Integer getActive() {
         return active;
     }
@@ -165,6 +197,14 @@ public class CountryModel implements Serializable {
         this.testsPerOneMillion = testsPerOneMillion;
     }
 
+    public Integer getPopulation() {
+        return population;
+    }
+
+    public void setPopulation(Integer population) {
+        this.population = population;
+    }
+
     public String getContinent() {
         return continent;
     }
@@ -172,6 +212,55 @@ public class CountryModel implements Serializable {
     public void setContinent(String continent) {
         this.continent = continent;
     }
+
+    public Integer getOneCasePerPeople() {
+        return oneCasePerPeople;
+    }
+
+    public void setOneCasePerPeople(Integer oneCasePerPeople) {
+        this.oneCasePerPeople = oneCasePerPeople;
+    }
+
+    public Integer getOneDeathPerPeople() {
+        return oneDeathPerPeople;
+    }
+
+    public void setOneDeathPerPeople(Integer oneDeathPerPeople) {
+        this.oneDeathPerPeople = oneDeathPerPeople;
+    }
+
+    public Integer getOneTestPerPeople() {
+        return oneTestPerPeople;
+    }
+
+    public void setOneTestPerPeople(Integer oneTestPerPeople) {
+        this.oneTestPerPeople = oneTestPerPeople;
+    }
+
+    public Double getActivePerOneMillion() {
+        return activePerOneMillion;
+    }
+
+    public void setActivePerOneMillion(Double activePerOneMillion) {
+        this.activePerOneMillion = activePerOneMillion;
+    }
+
+    public Double getRecoveredPerOneMillion() {
+        return recoveredPerOneMillion;
+    }
+
+    public void setRecoveredPerOneMillion(Double recoveredPerOneMillion) {
+        this.recoveredPerOneMillion = recoveredPerOneMillion;
+    }
+
+    public Double getCriticalPerOneMillion() {
+        return criticalPerOneMillion;
+    }
+
+    public void setCriticalPerOneMillion(Double criticalPerOneMillion) {
+        this.criticalPerOneMillion = criticalPerOneMillion;
+    }
+
     public class CountryInfo {
 
         @SerializedName("_id")
@@ -185,10 +274,10 @@ public class CountryModel implements Serializable {
         private String iso3;
         @SerializedName("lat")
         @Expose
-        private Float lat;
+        private Integer lat;
         @SerializedName("long")
         @Expose
-        private Float _long;
+        private Integer _long;
         @SerializedName("flag")
         @Expose
         private String flag;
@@ -217,19 +306,19 @@ public class CountryModel implements Serializable {
             this.iso3 = iso3;
         }
 
-        public Float getLat() {
+        public Integer getLat() {
             return lat;
         }
 
-        public void setLat(Float lat) {
+        public void setLat(Integer lat) {
             this.lat = lat;
         }
 
-        public Float getLong() {
+        public Integer getLong() {
             return _long;
         }
 
-        public void setLong(Float _long) {
+        public void setLong(Integer _long) {
             this._long = _long;
         }
 
@@ -244,5 +333,7 @@ public class CountryModel implements Serializable {
     }
 
 }
+
+
 
 

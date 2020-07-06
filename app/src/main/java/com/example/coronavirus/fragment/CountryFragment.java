@@ -8,23 +8,21 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.example.coronavirus.model.CountryModel;
+import com.example.coronavirus.model.MyCountryModel;
 import com.example.coronavirus.R;
 
 
-/**
- * A simple {@link Fragment} subclass.
- */
+
 public class CountryFragment extends Fragment {
 
     public CountryFragment() {
         // Required empty public constructor
     }
 
-    public static CountryFragment getInstance(CountryModel countryModel){
+    public static CountryFragment getInstance(MyCountryModel myCountryModel){
 
         Bundle bundle = new Bundle();
-        bundle.putSerializable("countryModel",countryModel);
+        bundle.putSerializable("countryModel", myCountryModel);
         CountryFragment countryFragment = new CountryFragment();
         countryFragment.setArguments(bundle);
         return countryFragment;
@@ -36,7 +34,7 @@ public class CountryFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_country, container, false);
 
-        CountryModel countryModel = (CountryModel) getArguments().getSerializable("countryModel");
+        MyCountryModel myCountryModel = (MyCountryModel) getArguments().getSerializable("countryModel");
 
         return view;
     }

@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -27,6 +26,7 @@
         android:weightSum="2">
 
         <Button
+            android:id="@+id/my_country_btn"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="30dp"
@@ -39,6 +39,7 @@
             android:textColor="@color/background" />
 
         <Button
+            android:id="@+id/global_btn"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="5dp"
@@ -87,12 +88,13 @@
                 android:textColor="@color/white" />
 
             <TextView
+                android:id="@+id/affected_tv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
                 android:layout_marginLeft="10dp"
                 android:fontFamily="@font/opensansregular"
-                android:text="66510"
+                android:text="0"
                 android:textColor="@color/white"
                 android:textSize="36sp" />
 
@@ -116,12 +118,13 @@
                 android:textColor="@color/white" />
 
             <TextView
+                android:id="@+id/death_tv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
                 android:layout_marginLeft="10dp"
                 android:fontFamily="@font/opensansregular"
-                android:text="4243"
+                android:text="0"
                 android:textColor="@color/white"
                 android:textSize="36sp" />
 
@@ -164,13 +167,14 @@
                 android:textColor="@color/white" />
 
             <TextView
+                android:id="@+id/total_affected_tv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
                 android:layout_marginLeft="10dp"
                 android:layout_marginBottom="5dp"
                 android:fontFamily="@font/opensansregular"
-                android:text="4318800"
+                android:text="0"
                 android:textColor="@color/white"
                 android:textSize="18sp" />
 
@@ -194,13 +198,14 @@
                 android:textColor="@color/white" />
 
             <TextView
+                android:id="@+id/total_death_tv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
                 android:layout_marginLeft="10dp"
                 android:layout_marginBottom="5dp"
                 android:fontFamily="@font/opensansregular"
-                android:text="291374"
+                android:text="0"
                 android:textColor="@color/white"
                 android:textSize="18sp" />
 
@@ -213,6 +218,7 @@
             android:layout_marginRight="30dp"
             android:layout_weight="1"
             android:background="@drawable/green_light_background">
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -223,13 +229,14 @@
                 android:textColor="@color/white" />
 
             <TextView
+                android:id="@+id/total_recovered_tv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
                 android:layout_marginLeft="10dp"
                 android:layout_marginBottom="5dp"
                 android:fontFamily="@font/opensansregular"
-                android:text="1569774"
+                android:text="0"
                 android:textColor="@color/white"
                 android:textSize="18sp" />
 

@@ -6,7 +6,7 @@ import retrofit2.Call;
 import retrofit2.http.GET;
 import retrofit2.http.Url;
 
-public interface WorldServices {
+public interface GlobalServices {
 
     @GET()
     Call<GlobalModel> getWorldInformation(@Url String worldUrl);
